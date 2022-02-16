@@ -62,11 +62,7 @@ class Traveler{
             this._isHealth = false
             return `${this.nome} agora está com fome(doente)`
         }else{
-            if(this._isHealth === false){
-                this._isHealth = true
-                this.reducefood -= 1
-                return `${this.nome} agora se recuperou após se alimentar(saudavel)`    
-            }
+            
             return this._food -= 1
         }
     }
